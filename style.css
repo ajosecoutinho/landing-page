@@ -1,0 +1,75 @@
+body {
+   background-image: url(images/Perfumista-de-Lisboa.jpg);
+   background-size: cover;
+   color: midnightblue;
+   text-align: right;
+   margin: 80px 70px 0px 0px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+   font-size: 80px;
+   font-style: oblique;
+   margin-bottom: 0;
+   font-family: 'Tangerine', cursive;
+}
+
+h2 {
+   font-size: 20px;
+   font-style: italic;
+   font-weight: 100;
+   margin-top: 5px;
+   opacity: 0.6;
+}
+p {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+span {
+   color: darkgreen;
+}
+
+ul {
+   list-style: none;
+   margin-top: 100px;
+}
+
+li {
+   display: inline;
+}
+
+ul li a {
+   color: darkblue;
+   text-decoration: none;
+   font-size: 30px;
+   padding: 10px;
+}
+.button {
+   color: white;
+   text-decoration: none; 
+   background-color: midnightblue; 
+   padding: 15px; 
+   margin-right: 95px;
+   border-radius: 150px;
+}
+
+.button:hover {
+   opacity: 0.7;
+}
+
+.social:hover {
+   opacity: 0.7;
+}
+.fragrances {
+   padding-top: 50px;
+   padding-bottom: 30px;
+}
+
+.workshops {
+   padding-bottom: 70px;
+}
+.name {
+   font-family: 'Allura', cursive;
+   font-size: 40px;
+}
