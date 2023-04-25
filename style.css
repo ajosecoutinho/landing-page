@@ -86,6 +86,16 @@ ul li a {
       padding-top: 20px;
    }
 
+   h2 {
+      color: white;
+      background-color: black;
+      border-radius: 150px;
+   }
+   
+   h2 span {
+      color: white
+   }
+
    p {
       font-size: 30px;
    }
