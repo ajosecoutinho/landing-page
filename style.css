@@ -40,7 +40,7 @@ li {
 }
 
 ul li a {
-   color: darkblue;
+   color: darkgreen;
    text-decoration: none;
    font-size: 30px;
    padding: 10px;
@@ -72,4 +72,32 @@ ul li a {
 .name {
    font-family: 'Allura', cursive;
    font-size: 40px;
+}
+
+@media (max-width:640px) {
+   body {
+      background-image: url(images/PL640.jpg);
+      background-size: cover;
+      text-align: center;
+      color: black;
+   }
+
+   h1 {
+      font-size: 70px;
+   }
+
+   .button {
+      margin-right: 0px;
+      text-align: center;
+      background-color: black;
+   }
+
+   ul li a {
+      margin-right: 40px;
+      padding: 0px;
+   }
+
+   span {
+      color: black;
+   }
 }
