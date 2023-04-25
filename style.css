@@ -74,7 +74,7 @@ ul li a {
    font-size: 40px;
 }
 
-@media (min-width: 320px) and (max-width: 1280px) {
+@media (min-width: 320px) and (max-width: 900px) {
    body {
       background: white;
       text-align: center;
