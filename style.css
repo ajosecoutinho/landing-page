@@ -76,7 +76,7 @@ ul li a {
 
 @media (max-width:640px) {
    body {
-      background-image: url(images/PL1080.jpg);
+      background-image: url(images/PL640.jpg);
       background-size: cover;
       text-align: center;
       color: black;
