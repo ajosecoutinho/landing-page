@@ -79,19 +79,23 @@ ul li a {
       background: white;
       text-align: center;
       color: black;
-      margin-left: 40px;
-      margin-right: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
    }
 
    h1 {
       font-size: 90px;
-      padding-top: 20px;
+      padding-top: 40px;
    }
 
    h2 {
       color: white;
-      background-color: black;
+      background-color: darkgreen;
       border-radius: 150px;
+      opacity: 0.9;
+      padding: 10 10 10 10;
+      margin-left: 60px;
+      margin-right: 60px;
    }
    
    h2 span {
