@@ -79,6 +79,8 @@ ul li a {
       background: white;
       text-align: center;
       color: black;
+      margin-left: 40px;
+      margin-right: 40px;
    }
 
    h1 {
