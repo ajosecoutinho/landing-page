@@ -74,9 +74,9 @@ ul li a {
    font-size: 40px;
 }
 
-@media (max-width:360px) {
+@media (max-width:375px) {
    body {
-      background-image: url(images/PL640.jpg);
+      background-image: url(images/PL1080.jpg);
       background-size: cover;
       text-align: center;
       color: black;
