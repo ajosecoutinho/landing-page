@@ -193,7 +193,7 @@ button[type="submit"] {
   opacity: 0.7;
 }
 /* Smaller screens */
-@media (max-width: 960px) {
+@media (max-width: 640px) and (orientation: portrait) {
   .background-container {
     opacity: 0.3;
   }
