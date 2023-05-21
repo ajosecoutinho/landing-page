@@ -195,7 +195,7 @@ button[type="submit"] {
 /* Smaller screens */
 @media (max-width: 640px) and (orientation: portrait) {
   .background-container {
-    opacity: 0.3;
+    opacity: 0.1;
   }
   h1 {
     font-size: 70px;
