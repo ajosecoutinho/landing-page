@@ -1,10 +1,19 @@
 /* General styles */
 body {
-  color: midnightblue;
+  color: darkolivegreen;
   text-align: right;
   margin: 70px auto;
   padding: 0 30px; /* Add padding to increase the content width */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 0px;
 }
 
 .background-container {
@@ -16,36 +25,36 @@ body {
 .container {
   max-width: 980px;
   margin: 0 auto;
-  position: relative; /* Add this line to make .container a positioned element */
+  position: relative;
 }
 
-.header {
+.h1-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f9f9f9;
-  padding: 10px;
+  right: 10px;
 }
 
-.h1-h2-container {
+.h2-container {
   position: fixed;
-  top: 130px;
   right: 10px;
 }
 
 h1 {
+  color: white;
+  background-color: black;
+  border-radius: 30px;
   font-size: 110px;
   font-style: oblique;
   margin-bottom: 0;
   font-family: 'Tangerine', cursive;
+  padding: 15px;
+ 
 }
 
 h2 {
   font-size: 30px;
   font-style: italic;
   font-weight: 100;
-  margin-top: 5px;
+  margin-top: px;
   opacity: 0.6;
 }
 
@@ -91,7 +100,7 @@ ul li a {
 
 p {
   font-size: 35px;
-  font-weight: bold;
+  font-weight:bold;
 }
 
 span {

@@ -13,6 +13,15 @@
   <link rel="stylesheet" href="style.css">
   <style>
     /* Add CSS styles for fixed headers */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f9f9f9;
+      padding: 0px;
+    }
+
     .fixed-headers {
       position: fixed;
       top: 0;
@@ -31,10 +40,17 @@
       transition: opacity 0.1s ease;
     }
 
-    /* Add CSS styles for fixed h1 and h2 */
-    h1, h2 {
+    h1 {
       position: fixed;
-      top: 130px;
+      top: 30px;
+      right: 20px;
+      opacity: 1;
+      transition: opacity 0.1s ease;
+    }
+    
+    h2 {
+      position: fixed;
+      top: 230px;
       right: 30px;
       opacity: 1;
       transition: opacity 0.1s ease;
@@ -42,7 +58,7 @@
 
     /* Add CSS styles for reduced opacity */
     .reduced-opacity {
-      opacity: 0.3;
+      opacity: 0.1;
     }
 
     /* Adjust the margins to create space below the fixed headers */
@@ -71,7 +87,7 @@
       <div class="social">
         <ul>
           <li><a class="social-link" href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a class="social-link" href="https://github.com/"><i class="fa-brands fa-square-github"></i></a></li>
+          <li><a class="social-link" href="https://github.com/ajosecoutinho/"><i class="fa-brands fa-square-github"></i></a></li>
         </ul>
       </div> 
       <h1>Perfumista de Lisboa</h1>
@@ -79,7 +95,7 @@
     </div> 
       <p class="fragrances">Singular <span>Fragrances</span> with <br> Portuguese Natural Essences</p>
       <p class="workshops">Perfume Making <span>Workshops</span> </p>
-      <p class="scroll"><span>Scroll</span> to check our <br> Signature Fragrances or <br> <span>Name</span> your Exclusive Parfum</p>
+      <p class="scroll"><span>Scroll</span> to check our <br> Signature Fragrances or <br> <span>Name</span> your Exclusive Perfume</p>
       <div class="box-container">
       <p class="lisbon"><span>Lisbon</span> Signature Fragrances:</p>
      </div>
