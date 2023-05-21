@@ -12,26 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Add CSS styles for fixed headers */
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #f9f9f9;
-      padding: 0px;
-    }
 
-    .fixed-headers {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #f9f9f9;
-      padding: 10px;
-    }
-
-    /* Add CSS styles for fixed social icons */
     .social {
       position: fixed;
       top: 0px;
@@ -56,17 +37,14 @@
       transition: opacity 0.1s ease;
     }
 
-    /* Add CSS styles for reduced opacity */
     .reduced-opacity {
       opacity: 0.1;
     }
 
-    /* Adjust the margins to create space below the fixed headers */
     .content {
-      margin-top: 300px; /* Adjust this value based on the height of your fixed headers */
+      margin-top: 300px;
     }
 
-    /* Add CSS styles for the background image */
     .background-container {
       background-image: url(images/Perfumista-de-Lisboa.jpg);
       background-size: cover;
@@ -96,7 +74,7 @@
       <p class="fragrances">Singular <span>Fragrances</span> with <br> Portuguese Natural Essences</p>
       <p class="workshops">Perfume Making <span>Workshops</span> </p>
       <p class="scroll"><span>Scroll</span> to check our <br> Signature Fragrances or <br> <span>Name</span> your Exclusive Perfume</p>
-      <div class="box-container">
+      <div class="lisbon-container">
       <p class="lisbon"><span>Lisbon</span> Signature Fragrances:</p>
      </div>
       <ul id="fragrance-list">
@@ -104,8 +82,8 @@
       <li>Monsanto Forest Wild</li><br>
       <li>Benfica Red Sport</li><br>
       <li>Bairro Alto Vibe</li><br>
-    </ul>
-    <p class="personal">Name your <span>Own Made</span> Perfume</p>
+      </ul>
+       <p class="personal">Name your <span>Own Made</span> Perfume</p>
     <form id="fragrance-form">
      <input type="text" id="fragrance-input" placeholder="Enter Fragrance Name" required>
      <input type="email" id="email-input" placeholder="Enter email" required>
