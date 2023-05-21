@@ -1,6 +1,6 @@
 /* General styles */
 body {
-  color: darkolivegreen;
+  color: darkslategrey;
   text-align: right;
   margin: 70px auto;
   padding: 0 30px; /* Add padding to increase the content width */
@@ -63,7 +63,7 @@ h2 {
 }
 
 .scroll-content.scroll-active {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 /* Social icons */
@@ -201,51 +201,24 @@ button[type="submit"] {
 .button:hover {
   opacity: 0.7;
 }
-/* Responsive styles */
-@media (max-width: 640px) and (orientation: portrait) {
-  body {
-    background: white;
-    text-align: center;
-    color: black;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 60px;
+/* Smaller screens */
+@media (max-width: 768px) {
+  .background-container {
+    opacity: 0.3;
   }
-
   h1 {
-    font-size: 90px;
+    font-size: 50px;
   }
 
   h2 {
-    color: white;
-    background-color: darkgreen;
-    border-radius: 150px;
-    opacity: 0.9;
-    padding: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-
-  h2 span {
-    color: white;
+    font-size: 18px;
   }
 
   p {
-    font-size: 30px;
-  }
-
-  .button {
-    margin-right: 0px;
-    text-align: center;
-    background-color: black;
+    font-size: 18px;
   }
 
   ul li a {
-    margin-right: 40px;
-    padding: 0px;
-  }
-
-  span {
-    color: black;
+    font-size: 12px;
   }
 }
