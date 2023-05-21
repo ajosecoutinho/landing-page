@@ -1,123 +1,242 @@
+/* General styles */
 body {
-   background-image: url(images/Perfumista-de-Lisboa.jpg);
-   background-size: cover;
-   color: midnightblue;
-   text-align: right;
-   margin: 70px 70px 0px 0px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: midnightblue;
+  text-align: right;
+  margin: 70px auto;
+  padding: 0 30px; /* Add padding to increase the content width */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background-container {
+  background-image: url(images/Perfumista-de-Lisboa.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative; /* Add this line to make .container a positioned element */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.h1-h2-container {
+  position: fixed;
+  top: 130px;
+  right: 10px;
 }
 
 h1 {
-   font-size: 110px;
-   font-style: oblique;
-   margin-bottom: 0;
-   font-family: 'Tangerine', cursive;
+  font-size: 110px;
+  font-style: oblique;
+  margin-bottom: 0;
+  font-family: 'Tangerine', cursive;
 }
 
 h2 {
-   font-size: 30px;
-   font-style: italic;
-   font-weight: 100;
-   margin-top: 5px;
-   opacity: 0.6;
-}
-p {
-   font-size: 35px;
-   font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 100;
+  margin-top: 5px;
+  opacity: 0.6;
 }
 
-span {
-   color: darkgreen;
+.scroll-content {
+  margin-top: 300px; /* Adjust this value based on the height of your fixed headers */
+}
+
+.scroll-content.scroll-active {
+  opacity: 0.3;
+}
+
+/* Social icons */
+.social {
+  position: fixed;
+  top: 0px;
+  right: 20px;
 }
 
 ul {
-   list-style: none;
-   margin-top: 80px;
+  list-style: none;
+  margin-top: 20px;
 }
 
 li {
-   display: inline;
+  display: inline;
 }
 
 ul li a {
-   color: darkgreen;
-   text-decoration: none;
-   font-size: 30px;
-   padding: 10px;
-}
-.button {
-   color: white;
-   text-decoration: none; 
-   background-color: midnightblue; 
-   padding: 15px; 
-   margin-right: 95px;
-   border-radius: 150px;
+  color: darkgreen;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
 }
 
-.button:hover {
-   opacity: 0.7;
+.name {
+  font-family: 'Allura', cursive;
+  font-size: 40px;
 }
 
 .social:hover {
-   opacity: 0.7;
+  opacity: 0.7;
 }
+
+p {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+span {
+  color: darkgreen;
+}
+
 .fragrances {
-   padding-top: 50px;
-   padding-bottom: 30px;
+  padding-top: 270px;
+  padding-bottom: 30px;
 }
 
 .workshops {
-   padding-bottom: 70px;
-}
-.name {
-   font-family: 'Allura', cursive;
-   font-size: 40px;
+  padding-bottom: 30px;
 }
 
-@media (max-width: 1024px) {
-   body {
-      background: white;
-      text-align: center;
-      color: black;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-top: 60px;
-   }
+.scroll {
+  padding-bottom: 30px;
+}
 
-   h1 {
-      font-size: 90px;
-   }
+.box-container {
+  background-color: midnightblue;
+  border: 3px solid darkgreen;
+  border-radius: 50px;
+  margin-left: 800px;
+  padding-right: 40px;
+  height: 90px;
+}
 
-   h2 {
-      color: white;
-      background-color: darkgreen;
-      border-radius: 150px;
-      opacity: 0.9;
-      padding: 10 10 10 10;
-      margin-left: 60px;
-      margin-right: 60px;
-   }
-   
-   h2 span {
-      color: white
-   }
+.lisbon {
+  font-size: 30px;
+  color: white;
+  height: fit-content;
+}
 
-   p {
-      font-size: 30px;
-   }
-   
-   .button {
-      margin-right: 0px;
-      text-align: center;
-      background-color: black;
-   }
+.personal {
+  padding-top: 0%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
 
-   ul li a {
-      margin-right: 40px;
-      padding: 0px;
-   }
+#fragrance-list {
+  list-style-type: none; /* Remove list bullets */
+  font-size: 70px;
+  font-style: oblique;
+  margin-top: 20;
+  margin-bottom: 40;
+  margin-right: 10;
+  font-family: 'Tangerine', cursive;
+  height: 300px; /* Set the desired fixed height for the list container */
+  overflow-y: auto; /* Add vertical scroll if the content exceeds the container height */
+  padding: 20;
+}
 
-   span {
-      color: black;
-   }
+/* Button styles */
+
+#fragrance-form {
+  display: right;
+  direction: line;
+  align-items: left;
+}
+
+#fragrance-input,
+#email-input {
+  padding: 20px;
+  margin: 10px 10px;
+  border: 3px solid darkgreen;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 16px;
+  color: midnightblue;
+}
+
+#fragrance-input::placeholder,
+#email-input::placeholder {
+  color: darkblue;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  margin: 10px 10px;
+  background-color: darkgreen;
+  border: 3px solid darkgreen;
+  border-radius: 50px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  background-color: midnightblue;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 150px;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+/* Responsive styles */
+@media (max-width: 640px) and (orientation: portrait) {
+  body {
+    background: white;
+    text-align: center;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  h2 {
+    color: white;
+    background-color: darkgreen;
+    border-radius: 150px;
+    opacity: 0.9;
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  h2 span {
+    color: white;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  .button {
+    margin-right: 0px;
+    text-align: center;
+    background-color: black;
+  }
+
+  ul li a {
+    margin-right: 40px;
+    padding: 0px;
+  }
+
+  span {
+    color: black;
+  }
 }

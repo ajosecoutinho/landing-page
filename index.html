@@ -1,30 +1,102 @@
 <html>
 <head>
-<title>Perfumista de Lisboa</title>
-<meta charset="utf-8">
-<link rel="icon" href="favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Tangerine:wght@700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/f9c74161d7.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<link rel="stylesheet" href="style.css">
+  <title>Perfumista de Lisboa</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f9c74161d7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add CSS styles for fixed headers */
+    .fixed-headers {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
+
+    /* Add CSS styles for fixed social icons */
+    .social {
+      position: fixed;
+      top: 0px;
+      right: 20px;
+      opacity: 1;
+      transition: opacity 0.1s ease;
+    }
+
+    /* Add CSS styles for fixed h1 and h2 */
+    h1, h2 {
+      position: fixed;
+      top: 130px;
+      right: 30px;
+      opacity: 1;
+      transition: opacity 0.1s ease;
+    }
+
+    /* Add CSS styles for reduced opacity */
+    .reduced-opacity {
+      opacity: 0.3;
+    }
+
+    /* Adjust the margins to create space below the fixed headers */
+    .content {
+      margin-top: 300px; /* Adjust this value based on the height of your fixed headers */
+    }
+
+    /* Add CSS styles for the background image */
+    .background-container {
+      background-image: url(images/Perfumista-de-Lisboa.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
-<div class="animate__animated animate__fadeIn animate__slower">
-    <h1>Perfumista de Lisboa</h1>
-    <h2>by <span class="name">Aníbal J. Coutinho</span></h2>
-    <p class="fragrances">Singular <span>Fragrances</span> with <br> Portuguese Natural Essences</p>
-    <p class="workshops">Perfume Making <span>Workshops</span> </p>
-</div> 
-<div class="animate__animated animate__fadeIn animate__delay-2s">
-    <p><a class="button" href="mailto:ajosecoutinho@gmail.com">Let's Talk ?</a></p>
-    <ul>
-        <li><a class="social" href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"><i class="fa-brands fa-linkedin"></i></a></li>
-        <li><a class="social" href="https://github.com/"><i class="fa-brands fa-square-github"></i></a></li>
+  <div class="background-container"></div>
+  <div class="animate__animated animate__fadeIn animate__slower">
+    <div class="fixed-headers">
+      <div class="social">
+        <ul>
+          <li><a class="social-link" href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a class="social-link" href="https://github.com/"><i class="fa-brands fa-square-github"></i></a></li>
+        </ul>
+      </div> 
+      <h1>Perfumista de Lisboa</h1>
+      <h2>by <span class="name">Aníbal J. Coutinho</span></h2>
+    </div> 
+      <p class="fragrances">Singular <span>Fragrances</span> with <br> Portuguese Natural Essences</p>
+      <p class="workshops">Perfume Making <span>Workshops</span> </p>
+      <p class="scroll"><span>Scroll</span> to check our <br> Signature Fragrances or <br> <span>Name</span> your Exclusive Parfum</p>
+      <div class="box-container">
+      <p class="lisbon"><span>Lisbon</span> Signature Fragrances:</p>
+     </div>
+      <ul id="fragrance-list">
+      <li>Alvalade Green Sport</li><br>
+      <li>Monsanto Forest Wild</li><br>
+      <li>Benfica Red Sport</li><br>
+      <li>Bairro Alto Vibe</li><br>
     </ul>
-</div>
+    <p class="personal">Name your <span>Own Made</span> Perfume</p>
+    <form id="fragrance-form">
+     <input type="text" id="fragrance-input" placeholder="Enter Fragrance Name" required>
+     <input type="email" id="email-input" placeholder="Enter email" required>
+     <button type="submit">Add</button>
+    </form>
+  </div>
+    <p><a class="button" href="mailto:ajosecoutinho@gmail.com">Let's Talk ?</a></p>
+  <script src="main.js"></script>
 </body>
 </html>
